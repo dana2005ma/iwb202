@@ -1,0 +1,294 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+        <!-- start header -->
+  <header>
+        <div class="container">
+           
+<div class="type">
+                <a class="logo" href="home.html">
+                    <img width="75px" src="images/logo.png" alt="logo">
+                </a>
+           
+                <nav>
+                 
+                    <ul >
+    
+                        <Li><a href="home.html">الرئيسية</a></Li>
+                        <Li><a  href="AboutUs.html">حول المكتب</a> </Li>
+                        <Li><a class="active"  href="cars.html">سياراتنا</a></Li>
+                       
+                      <Li><a href="AIFeatures.html"> AI Features</a> </Li>
+                    </ul>
+                </nav>
+                <!-- لوضع الشعارات -->
+                <div class="social">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+</div>
+    </header>
+    <!-- end header -->
+     <!-- start  section cars  -->
+      
+
+<div class="container">
+  <table id="carsTable" border="1">
+        <thead>
+            <tr><th>الرمز</th>
+                <th>الموديل</th>
+                <th>سنه الصنع </th>
+                <th> السعر اليومي</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th></tr>
+        </thead>
+        <tbody>
+            
+            <tr id="car1">
+                <td>cr-001</td>
+                <td>Toyota Camry (تويوتا كامري)</td>
+                <td>2026</td>
+                <td>7000ل.س.ج</td>
+                <td><button class="detail-btn" data-car="1"> تفاصيل</button></td>
+                <td><input type="checkbox" class="car-check" data-price="7000ل" data-name="Toyota Camry  " data-code="cr-001"></td>
+            </tr>
+            <!-- صف التفاصيل المخفي للوجبة 1 -->
+            <tr id="detail1" class="detail-row" style="display:none;"><td colspan="6"><div class="detail-content">
+       <div>
+                  اسم السبارة: Toyota Camry <br> الفئة: سيدان متوسطة الحجم (Mid-size Sedan)<br>
+           المواصفات:
+         <ul>
+             <li>1-المحرك:L 4-Cylinder2.5</li>
+             <li>2-القوة:203 حصان   </li>
+             <li>3-عدد االمقاعد: 5</li>
+             <li>4-نوع الوقود: بنزين / هجين (Hybrid)</li>
+             <li>5-عداد الكيلوميترات:50الف كيلو</li>
+             <li>6-اللون:رمادي</li>
+                   </ul>  
+       </div>
+    <img src="images/car1.jpeg" height="300px" alt="" width="400px"></div></td></tr>
+            
+            
+            <tr id="car2">
+                <td>cr-002</td>
+                <td>Hyundai Elantra (هيونداي إلاينترا)</td> 
+                <td>
+2025
+                </td><td>50000ل.س.ج</td>
+                <td><button class="detail-btn"data-car="2"> التفاصيل</button></td>
+                <td><input type="checkbox" class="car-check" data-price="50000ل.س.ج" data-name=" Hyundai Elantra (هيونداي إلاينترا)" data-code="cr-002"></td>
+            </tr>
+            <tr id="detail2" class="detail-row" style="display:none;"><td colspan="6"><div class="detail-content">
+                
+                <div>
+                  اسم السبارة: Hyundai Elantra (هيونداي إلاينترا) <br>الفئة:اقتصادية / مدمجة (Compact Sedan)<br>
+           المواصفات:
+         <ul>
+             <li>1-المحرك:L 4-Cylinder2.0</li>
+             <li>2-القوة:147 حصان   </li>
+             <li>3-عدد االمقاعد: 5</li>
+             <li>4-نوع الوقود: بنزين  (Hybrid)</li>
+             <li>5-عداد الكيلوميترات:60الف كيلو</li>
+             <li>6-اللون:رمادي</li>
+       
+         
+         </ul>
+       </div>
+    <img src="images/car2.jpeg" height="300px" alt="" width="400px"></div> </td></tr>
+            
+              <tr id="car3">
+                <td>cr-003</td><td>Kia Sportage (كيا سبورتاج)</td>   <td>2026</td><td>75000ل.س.ج</td>
+                <td><button class="detail-btn" data-car="3"> التفاصيل</button></td>
+                <td><input type="checkbox" class="car-check" data-price="75000ل.س.ج" data-name="Kia Sportage (كيا سبورتاج) " data-code="cr-003"></td>
+            </tr>
+            <tr id="detail3" class="detail-row" style="display:none;"><td colspan="6"><div class="detail-content">
+             <div>
+                    اسم السبارة: Kia Sportage (كيا سبورتاج)  <br>الفئة:دفع رباعي مدمج(Compact Sedan)<br>
+           المواصفات:
+         <ul>
+            <li>1-المحرك:L 4-Cylinder2.5</li>
+             <li>2-القوة:187 حصان   </li>
+             <li>3-عدد االمقاعد: 5</li>
+             <li>4-نوع الوقود: بنزين  </li>
+             <li>5-عداد الكيلوميترات:30الف كيلو</li>
+             <li>6- اللون:رمادي فاتح</li>
+             
+          
+       
+         
+         </ul>
+       </div>
+    <img src="images/car3.png" height="300px" alt="" width="400px"></div> </td></tr>
+            
+           
+            <tr id="car4">
+                <td>cr-004</td><td> BMW 4 Series Convertible (بي إم دبليو الفئة الرابعة مكشوفة)</td>
+                <td>2026</td>
+                <td>45000ل.س.ج</td>
+                <td><button class="detail-btn"data-car="4"> التفاصيل</button></td>
+                <td><input type="checkbox" class="car-check" data-price="45000ل.س.ج" data-name=" BMW 4 Series Convertible (بي إم دبليو الفئة الرابعة مكشوفة)" data-code="cr-004"></td>
+            </tr>
+            <tr id="detail4" class="detail-row" style="display:none;"><td colspan="6"><div class="detail-content">
+                 <div>
+                    اسم السبارة:BMW 4 Series Convertible (بي إم دبليو الفئة الرابعة مكشوفة) <br>الفئة:رياضية / مكشوفة  (Sports Convertible)<br>
+           المواصفات:
+         <ul>
+               <li>1-المحرك:L TwinPower Turbo2.0</li>
+             <li>2-القوة:255  حصان   </li>
+             <li>3-عدد االمقاعد: 4</li>
+             <li>4-نوع الوقود: بنزين  </li>
+             <li>5-عداد الكيلوميترات:20الف كيلو</li>
+             <li>6- اللون:فضي فاتح</li>
+             
+          
+             
+          
+       
+         
+         </ul>
+       </div>
+    <img src="images/car4.png" height="300px" alt="" width="400px"></div> </td></tr>
+            
+        
+            <tr id="car5">
+                <td>cr-005</td><td> Ford Expedition (فورد إكسبدشن)</td><td>2026</td><td>18000ل.س.ج</td>
+ <td><button class="detail-btn" data-car="5"> التفاصيل</button></td>
+                <td><input type="checkbox" class="car-check" data-price="18000ل.س.ج" data-name=" Ford Expedition (فورد إكسبدشن)" data-code="SF-005"></td>
+            </tr>
+            <tr id="detail5" class="detail-row" style="display:none;"><td colspan="6"><div class="detail-content">
+                       <div>
+                          اسم السبارة:Ford Expedition (فورد إكسبدشن) <br>الفئة:عائلية ضخمة (Large Family SUV)<br>
+           المواصفات:
+         <ul>
+              <li>1-المحرك:L EcoBoost V6 3.5</li>
+             <li>2-القوة:380   حصان   </li>
+             <li>3-عدد االمقاعد: 8</li>
+             <li>4-نوع الوقود: بنزين  </li>
+             <li>5-عداد الكيلوميترات:120الف كيلو</li>
+             <li>6- اللون: زيتوني</li>
+             
+         
+         </ul>
+       </div>
+    <img src="images/car5.png" height="300px" alt="" width="400px"></div> </td></tr>
+        </tbody>
+    </table>
+        <button id="toggleBtn" class="btn">متابعة </button>
+
+    <div id="modal">
+        <div class="modal-content">
+            <button id="close" class="btn-sec">✕</button>
+            <h2>قم بتعبئة الحقول لاتمام الطلب</h2>
+            
+         
+
+      <form id="information" onsubmit="validateForm(event); ;">
+            <label> ادخل الاسم:</label>
+            <input id="yourName" type="text" placeholder=" الرجاء ادخال الاسم بالعربية" class="inf-form"><br>
+            <label>الرقم الوطني:</label>
+         
+            <input id="Number_s" type="text" placeholder="    الرجاءادخال رقمك الوطني مكون من 11 رقم ويبدأ من01لل14"  class="inf-form"><br>
+            <label>تاريخ بداية التأجير:</label>
+            <input id="startDate" type="date" class="inf-form"><br>
+            <label>تاريخ نهاية التأجير:</label>
+<input id="endDate" type="date" class="inf-form"><br>
+            <label>رقم الهاتف:</label>
+            <input id="NumberPhone" type="text"  placeholder="  الرجاءادخال رقم هاتفك" class="inf-form"><br>
+            <label>ادخل الايميل:</label>
+            <input id="email" type="email" placeholder="الرجاءادخال ايميلك  " class="inf-form"><br>
+       <button type="button" class="btn-sec"  onclick="validateForm()">إرسال</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+ 
+
+     <!-- end  section cars  -->
+     <!-- start footer -->
+       <footer>
+<div class="container">
+<div class="inf-footer">
+    <div class="inf1">
+        <h2>نبذة عن المكتب </h2>
+       <p>مكتبنا  لتأجير السيارات هو أحد المكاتب الرائدة في مجال تأجير السيارات،
+          بهدف تقديم خدمات تأجير متميزة وموثوقة تلبي احتياجات الأفراد
+     والشركات. يضم المكتب أسطولاً حديثاً ومتنوعاً من السيارات
+         </p>
+    </div>
+    <div class="inf2">
+        <h2>اهم الخدمات</h2>
+        <ul>
+            <li>
+               تقديم خدمات باسعار رمزية
+            </li>
+            <li>
+               اهتمام خاص برضا الزبون
+            </li>
+            <li>
+                خدمة 24 ساعة
+           </li>
+            <li>
+            لدينا خدمة توصيل
+           </li>
+       
+        </ul>
+    </div>
+    <div class="inf2"> 
+        <h2>اهم المعلومات</h2>
+        <ul>
+            <li><i>
+                <a href="home.html">الرئيسية</a>
+            </i></li>
+            <li><i>
+                <a href="AboutUs.html">حول المكتب </a>
+            </i></li>
+            <li><i>
+                <a href="cars.html">سياراتنا</a>
+            </i></li>
+            <li><i>
+                <a href="AIFeatures.html">AI Features </a>
+            </i></li>
+       
+        </ul>
+    </div>
+    <div class="inf4">
+        <h2> تواصل معنا</h2>
+      <form action="">
+        <input type="text" placeholder="الرجاء ادخال الاسم">
+        <input type="number" placeholder="الرجاء ادخال الرقم">
+        
+      </form>
+      <button class="btn-basic">ارسال</button>
+    </div>
+</div>
+</div>
+       </footer>
+        <!-- end footer -->
+<script src="jquery.min.js"></script>
+<script src="myFunction.js"></script>
+</body>
+
+</html>
